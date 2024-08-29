@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*{ margin: 0; padding: 0; box-sizing: border-box; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body{ font-family: "Martel Sans", sans-serif; line-height: 1.9;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+p{font-size: 17px; color: #6c757d;}
 
-.App-link {
-  color: #61dafb;
-}
+.heading-2{font-size: 45px; font-weight: 600;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.heading-5{font-size: 25px; color: #f0a951;}
+
+.navbar-nav .nav-link{color: rgba(0, 0, 0, .5); margin: 0 12px;}
+
+.banner{background: url(../src/assets/images/banner.jpg) no-repeat center; background-size: cover; height: 800px; position: relative; z-index: 1;}
+
+.banner::before{position: absolute; content: ''; height: 100%; width: 100%; top: 0; left: 0; background: rgba(47,44,47,.4); z-index: -1;}
+
+.button{color: #f0a951; background-color: transparent; box-shadow: inset 0 0 0 3px #f0a951;  padding: 16px 40px; font-size: 18px; line-height: 29px; border-radius: 40px; border: none; cursor: pointer; text-decoration: none; display: inline-block;}
+
+.button:hover{background-color: black;}
+
+
+/* common banner */
+
+.jumbotron-banner{ position: relative; background: url('../src/assets/images/AboutBgImage.jpg') no-repeat center center; background-size: cover; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); z-index: 1;}
+
+.jumbotron-banner::before{content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(47,44,47,.4); z-index: -1;}
+
+.jumbotron-banner h1{font-size: 74px; font-weight: 700; text-transform: uppercase; padding: 80px 0;}
+
+/* common banner */
+
+
+/* painting gallery */
+
+.painting-gallery .card{height: 580px;}
+
+.painting-gallery .card-title{color: #f0a951; font-size: 25px; margin-top: 8px;}
+
+.painting-gallery .card-text{color: #6c757d; font-size: 17px;}
+
+/* painting gallery */
+
+
+/* services */
+
+.services .service-box{ display: flex; flex-direction: column; justify-content: center; align-items: center ; border:3px solid #f0a951; height: 300px;}
+
+.services .service-box svg{font-size: 54px; margin-bottom: 10px; color: #f0a951;}
+
+/* services */
+
+
+/* contact */
+
+.contact-form li svg { margin-right: 10px;  }
+
+/* contact */
+
+@media (min-width: 1400px) {.container{max-width: 1140px;}}
